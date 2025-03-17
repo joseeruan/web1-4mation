@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #41F2D1;
+}
+h1 {
+    font-size: 50px;
+    text-align: center; 
+    color: #ffffff
+}
+
+p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff9900; ;
+    background: white; 
+    padding: 10px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+p.blue {
+    color: blue;
+}
+
+p.red {
+    color: red; 
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    gap: 10ppx;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#board {
+    display: grid;
+    background-color: rgb(49, 29, 29);
+    gap: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cell.blue {
+    background-color: blue;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cell.highlight {
+    background-color: rgba(139, 241, 6, 0.856);
+    border: 2px dashed rgb(149, 235, 92);
+    animation: pulse 1s infinite alternate;
+    color: #9198ff;
+}
+
+.cell:hover {
+    background-color: #ddd;
+    border-color: darkblue;
+    border-radius: 20%;
+}
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #b15bf7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
